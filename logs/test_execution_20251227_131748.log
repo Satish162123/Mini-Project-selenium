@@ -1,0 +1,14 @@
+2025-12-27 13:1748 | INFO | LoginPage | Opening website: http://www.saucedemo.com/
+2025-12-27 13:1750 | INFO | LoginPage | Typing text 'standard_user' into element located by: ('id', 'user-name')
+2025-12-27 13:1750 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'user-name')
+2025-12-27 13:1751 | INFO | LoginPage | Typing text 'secret_sauce' into element located by: ('id', 'password')
+2025-12-27 13:1751 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'password')
+2025-12-27 13:1751 | INFO | LoginPage | Clicking on element located by: ('id', 'login-button')
+2025-12-27 13:1751 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'login-button')
+2025-12-27 13:1754 | INFO | LoginPage | Opening website: http://www.saucedemo.com/
+2025-12-27 13:1758 | INFO | LoginPage | Typing text 'wrong_username' into element located by: ('id', 'user-name')
+2025-12-27 13:1758 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'user-name')
+2025-12-27 13:1758 | INFO | LoginPage | Typing text 'wrong_password' into element located by: ('id', 'password')
+2025-12-27 13:1758 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'password')
+2025-12-27 13:1758 | INFO | LoginPage | Clicking on element located by: ('id', 'login-button')
+2025-12-27 13:1758 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'login-button')
