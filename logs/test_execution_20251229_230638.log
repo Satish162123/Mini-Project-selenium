@@ -1,0 +1,8 @@
+2025-12-29 23:0638 | INFO | LoginPage | Opening website: http://www.saucedemo.com/
+2025-12-29 23:0641 | INFO | LoginPage | Typing text 'invalid_user' into element located by: ('id', 'user-name')
+2025-12-29 23:0641 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'user-name')
+2025-12-29 23:0642 | INFO | LoginPage | Typing text 'invalid_pass' into element located by: ('id', 'password')
+2025-12-29 23:0642 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'password')
+2025-12-29 23:0643 | INFO | LoginPage | Clicking on element located by: ('id', 'login-button')
+2025-12-29 23:0643 | INFO | LoginPage | Waiting for visibility of element located by: ('id', 'login-button')
+2025-12-29 23:0644 | INFO | LoginPage | Waiting for visibility of element located by: ('css selector', "h3[data-test='error']")
