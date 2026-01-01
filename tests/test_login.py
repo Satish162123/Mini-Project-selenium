@@ -62,3 +62,40 @@ def test_login_with_empty_password(driver):
     login.login("standard_user", "") 
  
     assert "Password is required" in login.get_error_message()
+
+
+def test_login_with_locked_user(driver): 
+    """ 
+    TC05: Verify locked user cannot login 
+    """ 
+    login = LoginPage(driver) 
+ 
+    login.load() 
+    login.login("locked_out_user", "secret_sauce") 
+ 
+    assert "locked out" in login.get_error_message().lower()
+
+@pytest.mark.regression 
+def test_login_with_username_spaces(driver): 
+    """ 
+    TC06: Verify login trims username spaces 
+    """ 
+    login = LoginPage(driver) 
+    inventory = InventoryPage(driver) 
+ 
+    login.load() 
+    login.login(" standard_user ", "secret_sauce") 
+ 
+    assert inventory.is_loaded() 
+
+@pytest.mark.regression 
+def test_login_sql_injection_attempt(driver): 
+    """ 
+    TC07: Verify SQL injection is handled safely 
+    """ 
+    login = LoginPage(driver) 
+ 
+    login.load() 
+    login.login("' OR '1'='1", "any_password") 
+ 
+    assert "error" in login.get_error_message().lower() 
